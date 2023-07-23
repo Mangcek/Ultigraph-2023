@@ -16,18 +16,14 @@ use Inertia\Inertia;
 |
 */
 
-Route::get('/header', function (){
-    return Inertia::render('HeaderFooter');
+Route::get('/event', function () {
+    return Inertia::render('OurEvent', [
+        'canLogin' => Route::has('login'),
+        'canRegister' => Route::has('register'),
+        'laravelVersion' => Application::VERSION,
+        'phpVersion' => PHP_VERSION,
+    ]);
 });
-
-// Route::get('/', function () {
-//     return Inertia::render('Welcome', [
-//         'canLogin' => Route::has('login'),
-//         'canRegister' => Route::has('register'),
-//         'laravelVersion' => Application::VERSION,
-//         'phpVersion' => PHP_VERSION,
-//     ]);
-// });
 
 Route::get('/dashboard', function () {
     return Inertia::render('Dashboard');
