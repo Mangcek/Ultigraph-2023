@@ -1,16 +1,16 @@
 import { Link, Head } from '@inertiajs/react';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Pagination,Navigation } from 'swiper/modules';
+import { Pagination,Navigation,EffectFade } from 'swiper/modules';
 import { aboutData } from './aboutData';
 import "../../../css/AboutUs.scss";
 import LP_purple from './LP_purple.webp';
 import supergrafis1 from "../../../assets/img/supergrafis1.svg";
 import supergrafis2 from "../../../assets/img/supergrafis2.svg";
+
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
-
-
+import 'swiper/css/effect-fade';
 
 export default function AboutUs({ auth, laravelVersion, phpVersion }){
     const pagination = {
@@ -26,7 +26,7 @@ export default function AboutUs({ auth, laravelVersion, phpVersion }){
                     pagination
                 }
                 navigation={true}
-                modules={[ Navigation]}
+                modules={[Navigation]}
                 className="mySwiper AboutUs__section"
             >
                 {aboutData.map((data, index) => {
