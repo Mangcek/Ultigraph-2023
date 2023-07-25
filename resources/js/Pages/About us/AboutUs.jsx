@@ -1,5 +1,6 @@
 import { Link, Head } from '@inertiajs/react';
-import { Swiper, SwiperSlide } from 'swiper/react';
+import React, { useRef } from 'react';
+import {Swiper, SwiperSlide } from 'swiper/react';
 import { Pagination, Navigation, EffectFade } from 'swiper/modules';
 import { aboutData } from './aboutData';
 import "../../../css/AboutUs.scss";
@@ -13,21 +14,32 @@ import 'swiper/css/navigation';
 import 'swiper/css/effect-fade';
 
 export default function AboutUs({ auth, laravelVersion, phpVersion }){
-    const pagination = {
-        el: '.swiper-pagination',
-        clickable: true,
-        renderBullet: function (index, className) {
-          return '<span class="' + className + '">' + (index + 1) + '</span>';
-        }
-    };
+
+    // const pagination = {
+    //     el: '.swiper-pagination',
+    //     clickable: true,
+    //     renderBullet: function (index, className) {
+    //       return '<span class="' + className + '">' + (index + 1) + '</span>';
+    //     }
+    // };
+    const swiperRef = useRef(null);
+
+  // Function to handle slide navigation
+  const navigateToSlide = (slideIndex) => {
+    if (swiperRef.current) {
+      swiperRef.current.slideTo(slideIndex);
+    }
+  };
+    // const swiper = useSwiper(swiperOptions);
     return(
         <>
             <Head title="About Us" />
             <Swiper
-                modules={[Navigation, EffectFade]}
-                pagination={pagination}
+                modules={[Navigation,Pagination, EffectFade]}
+                // pagination={pagination}
                 effect="fade"
                 navigation={true}
+                onSwiper={(swiper) => (swiperRef.current = swiper)}
                 className="mySwiper AboutUs__section"
             >
                 {aboutData.map((data, index) => {
@@ -45,9 +57,10 @@ export default function AboutUs({ auth, laravelVersion, phpVersion }){
                             <div class="AboutUs__section__pagination">
                                 {data.pagination.map((data, index) => {
                                     return(
-                                        <button>
+                                        <button onClick = {()=>{navigateToSlide(index)}}>
                                             <img src={data} alt="" />
                                         </button>
+                                        
                                     );
                                 })}
                             </div>
