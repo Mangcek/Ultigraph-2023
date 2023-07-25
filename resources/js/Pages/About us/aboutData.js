@@ -1,12 +1,12 @@
 import LP_pink from '../../../assets/img/LP_pink.webp';
 import LP_orange from '../../../assets/img/LP_orange.webp';
 import LP_purple from '../../../assets/img/LP_purple.webp';
-import paginationPink from '../../../assets/img/paginationPink_unactive.svg';
-import paginationPinkActive from '../../../assets/img/paginationPink_active.svg';
-import paginationOrange from '../../../assets/img/paginationOrange_unactive.svg';
-import paginationOrangeActive from '../../../assets/img/paginationOrange_active.svg';
-import paginationPurple from '../../../assets/img/paginationPurple_unactive.svg';
-import paginationPurpleActive from '../../../assets/img/paginationPurple_active.svg';
+import paginationPink from '../../../assets/img/pagination/paginationPink_unactive.png';
+import paginationPinkActive from '../../../assets/img/pagination/paginationPink_active.png';
+import paginationOrange from '../../../assets/img/pagination/paginationOrange_unactive.png';
+import paginationOrangeActive from '../../../assets/img/pagination/paginationOrange_active.png';
+import paginationPurple from '../../../assets/img/pagination/paginationPurple_unactive.png';
+import paginationPurpleActive from '../../../assets/img/pagination/paginationPurple_active.png';
 export const aboutData = [
     {
         id: 1,

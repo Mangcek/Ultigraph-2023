@@ -14,6 +14,7 @@ import 'swiper/css/effect-fade';
 
 export default function AboutUs({ auth, laravelVersion, phpVersion }){
     const pagination = {
+        el: '.swiper-pagination',
         clickable: true,
         renderBullet: function (index, className) {
           return '<span class="' + className + '">' + (index + 1) + '</span>';
@@ -21,11 +22,10 @@ export default function AboutUs({ auth, laravelVersion, phpVersion }){
     };
     return(
         <>
+            <Head title="About Us" />
             <Swiper
                 modules={[Navigation, EffectFade]}
-                pagination={
-                    pagination
-                }
+                pagination={pagination}
                 effect="fade"
                 navigation={true}
                 className="mySwiper AboutUs__section"
