@@ -4,7 +4,7 @@ $descriptionBox_height_desktop : 682px;
 @import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@400;500;600;700;800&display=swap');
 
 .AboutUs__section__outerBorder {
-    margin-top:160px;
+    margin-top:150px;
     position:relative;
     width: fit-content;
     height: fit-content;
@@ -55,9 +55,15 @@ $descriptionBox_height_desktop : 682px;
     line-height: normal;
 }
 
+.AboutUs__section__pagination {
+    margin-bottom: 60px;
+}
+
 .AboutUs__section__pagination img {
     width: 20px;
-    margin-top: 15px;
+    height: 20px;
+    background-size: 20px 20px;
+    margin-top: 20px;
     margin-left: 10px;
 }
 
@@ -71,6 +77,31 @@ $descriptionBox_height_desktop : 682px;
     justify-content:center;
     align-items:center;
 }
+
+.swiper-button-next::after, .swiper-button-prev::after {
+    content: "" !important;
+}
+
+.swiper-button-prev {
+    margin-top: 10px !important;
+    margin-left: 20px !important;
+    width: 50px !important;
+    height: 50px !important;
+    background-repeat: no-repeat;
+    background-size: 50px 50px;
+    background-image: url("../assets/img/left arrow.svg") !important;
+  }
+  
+  .swiper-button-next {
+    margin-top: 10px !important;
+    margin-right: 20px !important;
+    width: 50px !important;
+    height: 50px !important;
+    background-repeat: no-repeat;
+    background-size: 50px 50px;
+    background-image: url("../assets/img/right arrow.svg") !important;
+  }
+
 .supergrafis1 {
     position:absolute;
     top:0;

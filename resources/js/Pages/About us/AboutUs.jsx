@@ -1,6 +1,6 @@
 import { Link, Head } from '@inertiajs/react';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Pagination,Navigation,EffectFade } from 'swiper/modules';
+import { Pagination, Navigation, EffectFade } from 'swiper/modules';
 import { aboutData } from './aboutData';
 import "../../../css/AboutUs.scss";
 import LP_purple from './LP_purple.webp';
@@ -22,11 +22,12 @@ export default function AboutUs({ auth, laravelVersion, phpVersion }){
     return(
         <>
             <Swiper
+                modules={[Navigation, EffectFade]}
                 pagination={
                     pagination
                 }
+                effect="fade"
                 navigation={true}
-                modules={[Navigation]}
                 className="mySwiper AboutUs__section"
             >
                 {aboutData.map((data, index) => {

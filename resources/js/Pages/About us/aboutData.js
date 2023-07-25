@@ -14,7 +14,7 @@ export const aboutData = [
         img: LP_pink,
         color:"#F37786",
         pagination: [paginationPinkActive,paginationOrange,paginationPurple],
-        description : "Ultigraph adalah acara fetival desain grafis terbesar yang diselenggarakan dibawah naungan jurusan Desain Komunikasi Visual Universitas Multimedia Nusantara. Dalam Pelaksanaan acara tahun ini, Ultigraph akan mengangkat tentang revitalisasi budaya yakni bertujuan untuk mengingatkan tentang nilai-nilai budaya Indonesia yang telah pudar di kalangan masyarakat zaman sekarang. Hal ini mampu diwujudkan dengan melakukan sosialisasi tentang pentingnya revitalisasi budaya itu sendiri untuk keberlangsungan tidak hanya kepada kaum desain grafis melainkan seluruh masyarakat Indonesia."
+        description : "Ultigraph adalah acara festival desain grafis terbesar yang diselenggarakan dibawah naungan jurusan Desain Komunikasi Visual Universitas Multimedia Nusantara. Dalam Pelaksanaan acara tahun ini, Ultigraph akan mengangkat tentang revitalisasi budaya yakni bertujuan untuk mengingatkan tentang nilai-nilai budaya Indonesia yang telah pudar di kalangan masyarakat zaman sekarang. Hal ini mampu diwujudkan dengan melakukan sosialisasi tentang pentingnya revitalisasi budaya itu sendiri untuk keberlangsungan tidak hanya kepada kaum desain grafis melainkan seluruh masyarakat Indonesia."
     },
     {
         id: 2,
