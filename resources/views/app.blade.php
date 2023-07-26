@@ -7,7 +7,9 @@
         <!-- <title inertia>{{ config('app.name', 'Ultigraph') }}</title> -->
         
         <title inertia>Ultigraph Askara Arunika</title>
-
+        <!-- <link rel="icon" href="../assets/favicon.ico"> -->
+        <link rel="icon" href="{{ asset('favicon.ico') }}">
+        
         <!-- Fonts -->
         <link rel="preconnect" href="https://fonts.bunny.net">
         <link href="https://fonts.bunny.net/css?family=figtree:400,500,600&display=swap" rel="stylesheet" />

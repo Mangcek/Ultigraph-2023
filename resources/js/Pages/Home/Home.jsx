@@ -14,6 +14,7 @@ import Arrow from "../../../assets/home/Arrow.svg";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../../../css/home.scss";
 
+import { Link, Head } from '@inertiajs/react';
 import { useState, useEffect, useRef } from "react";
 
 export default function Home({ auth, laravelVersion, phpVersion }){
@@ -39,7 +40,9 @@ export default function Home({ auth, laravelVersion, phpVersion }){
 
     return (
         <>
+
             <Navbar />
+            <Head title="Home" />
             <div className="container">
                 <div className="header__section">
                     <img className="supergrafisbunga-kiri" src={supergrafisBunga1} alt="" />
