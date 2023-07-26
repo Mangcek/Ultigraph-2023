@@ -1,7 +1,5 @@
-// NAVBAR
-import LogoUMNPutih1 from "../../../assets/home/LogoUMNPutih1.svg";
-import LogoDKVUMN from "../../../assets/home/DKV UMN 1.svg";
-import LogoAskaraArunika1 from "../../../assets/home/logo askara arunika-01 1.svg";
+import Navbar from "../../Components/Navbar/Navbar";
+import Footer from "../../Components/Footer/Footer";
 
 import supergrafisBunga1 from "../../../assets/home/supergrafis bunga (1) 2.svg";
 import theDeerpa from "../../../assets/home/deerpa exhibition (tambahan)-02 1.svg";
@@ -13,32 +11,35 @@ import Bazzar2 from "../../../assets/home/BAZZAR_03 1.png";
 import Bazzar3 from "../../../assets/home/BAZZAR_04 (1) 1.png";
 import Arrow from "../../../assets/home/Arrow.svg";
 
-// FOOTER
-import Email from "../../../assets/home/Mask group.svg";
-import Instagram from "../../../assets/home/Mask group-1.svg";
-
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../../../css/home.scss";
 
+import { useState, useEffect, useRef } from "react";
+
 export default function Home({ auth, laravelVersion, phpVersion }){
+
+    const [modal, setModal] = useState(false);
+  
+    const Modal = useRef(null);
+  
+    // HANLDE CLOSE MODAL
+    useEffect(() => {
+      const handleClickRemoveModal = (event) => {
+        if (!modal == false) {
+          if (Modal.current) {
+            setModal(false);
+          }
+        }
+      };
+      document.addEventListener("click", handleClickRemoveModal, true);
+      return () => {
+        document.removeEventListener("click", handleClickRemoveModal, true);
+      };
+    }, [modal]);
+
     return (
         <>
-            <nav className="navbar navbar-expand-lg px-4 fixed-top">
-                <div className="container-fluid">
-                    <a className="navbar-brand" href="#"><img src={LogoUMNPutih1} alt="logo umn" /></a>
-                    <a className="navbar-brand" href="#"><img src={LogoDKVUMN} alt="logo dkv" /></a>
-                    <a className="navbar-brand" href="#"><img style={{ width: '100px' }} src={LogoAskaraArunika1} alt="logo umn" /></a>
-                    <button style={{ border: 'none' }} className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                        <span className="navbar-toggler-icon navbar-dark"></span>
-                    </button>
-                    <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
-                        <div className="navbar-nav ms-auto">
-                            <a className="nav-text" href="#">About Us</a>
-                            <a className="nav-text" href="ourEvent.html">Our Events</a>
-                        </div>
-                    </div>
-                </div>
-            </nav>
+            <Navbar />
             <div className="container">
                 <div className="header__section">
                     <img className="supergrafisbunga-kiri" src={supergrafisBunga1} alt="" />
@@ -63,53 +64,47 @@ export default function Home({ auth, laravelVersion, phpVersion }){
                 <div className="whatscoming__section">
                     <h1 className="heading-whatscoming__section">Check Out What's Coming!</h1>
                     <div className="event__section">
-                        <button className="grid-event__section a">
+                        <button className="grid-event__section a" onClick={() => setModal(!modal)}>
                             <div className="the-text">
                                 <h2>COMPETITION</h2>
-                                <img style={{ width: '32px' }} src={Arrow} alt="" />
+                                {/* <img style={{ width: '32px' }} src={Arrow} alt="" /> */}
                             </div>
                         </button>
-                        <button className="grid-event__section b">
+                        <button className="grid-event__section b" onClick={() => setModal(!modal)}>
                             <div className="the-text">
                                 <h2>PRE-EVENT</h2>
-                                <img style={{ width: '32px' }} src={Arrow} alt="" />
+                                {/* <img style={{ width: '32px' }} src={Arrow} alt="" /> */}
                             </div>
                         </button>
-                        <button className="grid-event__section c">
+                        <button className="grid-event__section c" onClick={() => setModal(!modal)}>
                             <div className="the-text">
                                 <h2>SEMINAR & WORKSHOP</h2>
-                                <img style={{ width: '32px' }} src={Arrow} alt="" />
+                                {/* <img style={{ width: '32px' }} src={Arrow} alt="" /> */}
                             </div>
                         </button>
-                        <button className="grid-event__section d">
+                        <button className="grid-event__section d" onClick={() => setModal(!modal)}>
                             <div className="the-text">
                                 <h2>EXHIBITION</h2>
-                                <img style={{ width: '32px' }} src={Arrow} alt="" />
+                                {/* <img style={{ width: '32px' }} src={Arrow} alt="" /> */}
                             </div>
                         </button>
-                        <button className="grid-event__section e">
+                        <button className="grid-event__section e" onClick={() => setModal(!modal)}>
                             <div className="the-text">
                                 <h2>AWARDING NIGHT</h2>
-                                <img style={{ width: '32px' }} src={Arrow} alt="" />
+                                {/* <img style={{ width: '32px' }} src={Arrow} alt="" /> */}
                             </div>
                         </button>
                     </div>
                 </div>
             </div>
-            <footer>
-                <h5>Contact Us</h5>
-                <div className="socialmedia">
-                    <div className="the-icon">
-                        <img src={Instagram} alt="instagram" />
-                        <p className="my-auto"><a style={{ color: 'white', fontFamily: 'Open Sans' }} target="_blank" href="https://www.instagram.com/ultigraph">@ultigraph</a></p>
-                    </div>
-                    <div className="the-icon">
-                        <img src={Email} alt="email" />
-                        <p className="my-auto"><a style={{ color: 'white', fontFamily: 'Open Sans' }} href="mailto: ultigraph@umn.ac.id">ultigraph@umn.ac.id</a></p>
+            <Footer />
+            {modal ? 
+                <div ref={Modal} id="comingsoon" className="comingsoon">
+                    <div className="modal-content">
+                        <p className="text">COMING SOON</p>
                     </div>
                 </div>
-            </footer>
-            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+            : null }
         </>
     );
 }

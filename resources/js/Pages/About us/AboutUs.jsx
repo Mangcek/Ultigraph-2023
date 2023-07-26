@@ -2,6 +2,10 @@ import { Link, Head } from '@inertiajs/react';
 import React, { useRef } from 'react';
 import {Swiper, SwiperSlide } from 'swiper/react';
 import { Pagination, Navigation, EffectFade } from 'swiper/modules';
+
+import Navbar from "../../Components/Navbar/Navbar";
+import Footer from "../../Components/Footer/Footer";
+
 import { aboutData } from './aboutData';
 import "../../../css/AboutUs.scss";
 import LP_purple from './LP_purple.webp';
@@ -33,6 +37,7 @@ export default function AboutUs({ auth, laravelVersion, phpVersion }){
     // const swiper = useSwiper(swiperOptions);
     return(
         <>
+            <Navbar current="AboutUs" />
             <Head title="About Us" />
             <Swiper
                 modules={[Navigation,Pagination, EffectFade]}
@@ -68,7 +73,7 @@ export default function AboutUs({ auth, laravelVersion, phpVersion }){
                     )
                 })}
             </Swiper>
-
+            <Footer />
         </>
     );
 }

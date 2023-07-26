@@ -1,0 +1,32 @@
+footer {
+    padding: 40px;
+    background-color: black;
+}
+
+footer h5 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: white;
+
+    margin-bottom: 20px;
+}
+
+.socialmedia {
+    display: flex;
+    gap: 40px;
+}
+
+.the-icon {
+    display: flex;
+    color: white;
+    gap: 8px;
+}
+
+@media screen and (max-width: 510px) {
+    .socialmedia {
+        display: grid;
+        grid-template-columns: auto;
+        gap: 20px;
+    }
+}

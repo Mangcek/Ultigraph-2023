@@ -10,23 +10,8 @@ body {
     padding-top: 200px;
 }
 
-nav {
-    background: rgba(243, 119, 134, 0.72);
-    -webkit-backdrop-filter: blur(32px);
-    backdrop-filter: blur(32px);
-    font-family: 'Baloo 2', cursive;
-}
-
-.nav-text {
-    padding-left: 20px;
-    padding-right: 20px ;
-
-    margin-left: 40px;
-    color: white;
-    text-decoration: none;
-    
-    font-size: 1.5rem;
-    font-weight: 500; 
+.container {
+    padding-bottom: 80px;
 }
 
 .header__section {
@@ -145,15 +130,16 @@ nav {
     font-size: 2rem;
     color: white;
     border-radius: 20px;
-    padding: 20px;
+    padding: 5vw;
     font-size: 150%;
+    box-shadow: -5px 5px 4px 0px rgba(0, 0, 0, 0.25);
 
     border: none;
 }
 
 .the-text {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 .a {
@@ -187,31 +173,36 @@ nav {
     background-color: #F37437;
 }
 
-footer {
-    margin-top: 80px;
-    padding: 40px;
-    background-color: black;
+.comingsoon {
+    position: fixed;
+    z-index: 5;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+    
+    .modal-content {
+        color: white;
+        font-family: 'Baloo 2', cursive;
+        font-size: 8vw;
+        margin: auto;
+        padding: 10vw 5vw;
+        background-image: url("../assets/home/Gradient-ComingSoon.svg");
+        width: 70%;
+        border-radius: 40px;
+
+        .text {
+            margin: auto;
+        }
+    }
 }
 
-footer h5 {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 1.5rem;
-    font-weight: 400;
-    color: white;
 
-    margin-bottom: 20px;
-}
-
-.socialmedia {
-    display: flex;
-    gap: 40px;
-}
-
-.the-icon {
-    display: flex;
-    color: white;
-    gap: 8px;
-}
+// RESPONSIVE
 
 @media screen and (max-width: 1800px) {
     .the-deerpa {
@@ -438,14 +429,7 @@ footer h5 {
         top: 220px;
         width: 240px;
         right: 40px;
-    }
-
-    .socialmedia {
-        display: grid;
-        grid-template-columns: auto;
-        gap: 20px;
-    }
-    
+    }    
 }
 
 @media screen and (max-width: 454px) {
