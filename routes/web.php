@@ -17,6 +17,15 @@ use Inertia\Inertia;
 */
 
 Route::get('/', function () {
+    return Inertia::render('Home/Home', [
+        'canLogin' => Route::has('login'),
+        'canRegister' => Route::has('register'),
+        'laravelVersion' => Application::VERSION,
+        'phpVersion' => PHP_VERSION,
+    ]);
+});
+
+Route::get('/aboutus', function () {
     return Inertia::render('About us/AboutUs', [
         'canLogin' => Route::has('login'),
         'canRegister' => Route::has('register'),

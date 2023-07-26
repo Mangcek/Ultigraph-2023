@@ -1,0 +1,520 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700;800&family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+
+* {
+    -webkit-transition: .2s linear;
+    transition: .2s linear;
+}
+
+body {
+    margin: 0;
+    padding-top: 200px;
+}
+
+nav {
+    background: rgba(243, 119, 134, 0.72);
+    -webkit-backdrop-filter: blur(32px);
+    backdrop-filter: blur(32px);
+    font-family: 'Baloo 2', cursive;
+}
+
+.nav-text {
+    padding-left: 20px;
+    padding-right: 20px ;
+
+    margin-left: 40px;
+    color: white;
+    text-decoration: none;
+    
+    font-size: 1.5rem;
+    font-weight: 500; 
+}
+
+.header__section {
+    display: flex;
+    justify-content: center;
+}
+
+.heading_the-box{
+    margin-top: 40px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: white;
+}
+
+.supergrafisbunga-kiri {
+    width: 460px;
+    position: absolute;
+    top: 80px;
+    left: 320px;
+    z-index: -1;
+}
+
+.supergrafisbunga-kanan {
+    width: 460px;
+    position: absolute;
+    top: 80px;
+    right: 320px;
+    z-index: -1;
+}
+
+.the-box {
+    text-align: center;
+    border: 1px solid black;
+    background: url("../assets/home/The\ gradient.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 700px;
+
+    box-shadow: 0px 5px 4px 0px rgba(0, 0, 0, 0.25);
+
+    border-radius: 48px;
+    border: none;
+}
+
+.the-deerpa {
+    width: 460px;
+    position: absolute;
+    top: 168px;
+    left: 400px;
+}
+
+.arunika-logo {
+    width: 320px;
+    margin: -70px auto 0;
+}
+
+.whiteflower {
+    width: 100px;
+    position: absolute;
+    top: 240px;
+    right: 700px;
+}
+
+.recap__section {
+    margin-top: 80px;
+}
+
+.heading-recap__section {
+    text-align: center;
+
+    font-family: 'Baloo 2', cursive;
+    font-weight: 500;
+    font-size: 2rem;
+    color: #F37786;
+
+    margin-bottom: 20px;
+}
+
+.images-recap__section {
+    display: flex;
+    justify-content: space-between;
+}
+
+.images-recap__section img {
+    width: 420px;
+    border-radius: 20px;
+}
+
+.whatscoming__section {
+    margin-top: 80px;
+}
+
+.heading-whatscoming__section {
+    text-align: center;
+
+    font-family: 'Baloo 2', cursive;
+    font-weight: 500;
+    font-size: 2rem;
+    color: #F37786;
+
+    margin-bottom: 20px;
+}
+
+.event__section {
+    display: grid;
+    grid-template-columns: repeat(4, [col] auto ) ;
+    grid-template-rows: repeat(3, [row] auto );
+    background-color: #fff;
+    gap: 12px;
+}
+
+.grid-event__section {
+    font-family: 'Baloo 2', cursive;
+    font-weight: 500;
+    font-size: 2rem;
+    color: white;
+    border-radius: 20px;
+    padding: 20px;
+    font-size: 150%;
+
+    border: none;
+}
+
+.the-text {
+    display: flex;
+    justify-content: space-between;
+}
+
+.a {
+    grid-column: col;
+    grid-row: row ;
+
+    background-color: #F37786;
+}
+.b {
+    grid-column: col 2 / span 3 ;
+    grid-row: row ;
+
+    background-color: #C58ABD;
+}
+.c {
+    grid-column: col / span 2;
+    grid-row: row 2 ;
+
+    background-color: #C58ABD;
+}
+.d {
+    grid-column: col 3 / span 2 ;
+    grid-row: row 2 ;
+
+    background-color: #F37786;
+}
+.e {
+    grid-column: col / span 4;
+    grid-row: row 3;
+
+    background-color: #F37437;
+}
+
+footer {
+    margin-top: 80px;
+    padding: 40px;
+    background-color: black;
+}
+
+footer h5 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: white;
+
+    margin-bottom: 20px;
+}
+
+.socialmedia {
+    display: flex;
+    gap: 40px;
+}
+
+.the-icon {
+    display: flex;
+    color: white;
+    gap: 8px;
+}
+
+@media screen and (max-width: 1800px) {
+    .the-deerpa {
+        left: 320px;
+    }
+    
+    .whiteflower {
+        right: 600px;
+    }
+}
+
+@media screen and (max-width: 1680px) {
+    .the-deerpa {
+        left: 220px;
+    }
+    
+    .whiteflower {
+        right: 480px;
+    }
+
+    .supergrafisbunga-kiri {
+        left: 240px;
+    }
+    
+    .supergrafisbunga-kanan {
+        right: 240px;
+    }
+}
+
+@media screen and (max-width: 1440px) {
+    .supergrafisbunga-kiri {
+        left: 160px;
+    }
+    
+    .supergrafisbunga-kanan {
+        right: 160px;
+    }
+}
+
+@media screen and (max-width: 1400px) {
+    .images-recap__section img {
+        width: 360px;
+    }
+
+    .the-deerpa {
+        width: 420px;
+        top: 168px;
+        left: 200px;
+    }
+
+    .whiteflower {
+        right: 440px;
+    }
+
+}
+
+@media screen and (max-width: 1300px) {
+    .the-deerpa {
+        left: 140px;
+    }
+
+    .whiteflower {
+        right: 400px;
+    }
+
+    .supergrafisbunga-kiri {
+        left: 100px;
+    }
+    
+    .supergrafisbunga-kanan {
+        right: 100px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .the-deerpa {
+        width: 380px;
+        top: 200px;
+        left: 120px;
+    }
+
+    .whiteflower {
+        width: 80px;
+        top: 240px;
+        right: 360px;
+    }
+
+    .images-recap__section img {
+        width: 300px;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .the-deerpa {
+        top: 200px;
+        left: 60px;
+    }
+
+    .whiteflower {
+        width: 60px;
+        top: 260px;
+        right: 340px;
+    }
+
+    .supergrafisbunga-kiri {
+        left: 40px;
+    }
+    
+    .supergrafisbunga-kanan {
+        right: 40px;
+    }
+
+}
+
+@media screen and (max-width: 1000px) {
+    .the-deerpa {
+        display: none;
+    }
+
+    .whiteflower {
+        right: 280px;
+    }
+
+    .images-recap__section {
+        display: grid;
+        grid-template-columns: auto;
+        justify-content: center;
+        gap: 20px;
+    }
+    .images-recap__section img {
+        width: 500px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .whiteflower {
+        right: 220px;
+    }
+
+    .images-recap__section {
+        display: grid;
+        grid-template-columns: auto;
+        justify-content: center;
+        gap: 20px;
+    }
+    .images-recap__section img {
+        width: 500px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .whiteflower {
+        right: 180px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .whiteflower {
+        right: 120px;
+    }
+}
+
+@media screen and (max-width: 584px) {
+    .whiteflower {
+        right: 60px;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    .whiteflower {
+        right: 60px;
+    }
+
+    .images-recap__section img {
+        width: fit-content;
+    }
+}
+
+@media screen and (max-width: 510px) {
+    .whiteflower {
+        right: 28px;
+    }
+
+    .images-recap__section img {
+        width: 400px;
+    }
+
+    .event__section {
+        grid-template-columns: auto;
+    }
+    
+    .a {
+        grid-column: auto;
+        grid-row: auto ;
+    }
+    
+    .b {
+        grid-column: auto ;
+        grid-row: auto ;
+    }
+
+    .c {
+        grid-column: auto;
+        grid-row: auto ;
+    }
+
+    .d {
+        grid-column: auto ;
+        grid-row: auto ;
+    }
+
+    .e {
+        grid-column: auto;
+        grid-row: auto;
+    }
+
+    .supergrafisbunga-kiri {
+        top: 220px;
+        width: 240px;
+        left: 40px;
+    }
+    
+    .supergrafisbunga-kanan {
+        top: 220px;
+        width: 240px;
+        right: 40px;
+    }
+
+    .socialmedia {
+        display: grid;
+        grid-template-columns: auto;
+        gap: 20px;
+    }
+    
+}
+
+@media screen and (max-width: 454px) {
+    .whiteflower {
+        right: 28px;
+    }
+
+    .images-recap__section img {
+        width: 320px;
+    }
+
+    .supergrafisbunga-kiri {
+        top: 420px;
+        width: 140px;
+        left: 80px;
+    }
+    
+    .supergrafisbunga-kanan {
+        top: 420px;
+        width: 140px;
+        right: 80px;
+    }
+
+    .the-box {
+        text-align: center;
+        border: 1px solid black;
+        background: url("../assets/home/The\ gradient.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 500px;
+    
+        border-radius: 48px;
+        border: none;
+    }
+
+    .arunika-logo {
+        width: 220px;
+        margin: -50px auto 0;
+    }
+}
+/* nav {W
+    position: fixed;
+    top: 0;
+    width: 100%;
+    overflow: hidden;
+
+    background-color: #F37786;
+    color: white;
+
+    display: flex; 
+    justify-content: space-between;
+
+    padding: 0 40px 0 40px;
+}
+
+img {
+    margin-right: 28px;
+    vertical-align: middle;
+}
+
+ul {
+    display: flex;
+    gap: 80px;
+    margin: auto 0 auto 0;
+}
+
+li {
+    list-style: none;
+
+    font-size: 1.5rem;
+    font-weight: 500; 
+} */

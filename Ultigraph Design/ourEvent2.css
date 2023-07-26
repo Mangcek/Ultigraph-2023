@@ -1,0 +1,321 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700;800&family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+
+* {
+    -webkit-transition: .2s linear;
+    transition: .2s linear;
+    
+}
+
+body {
+    margin: 0;
+    padding-top: 200px;
+}
+
+nav {
+    background: rgba(243, 116, 55, 0.72);
+    -webkit-backdrop-filter: blur(32px);
+    backdrop-filter: blur(21px);
+    font-family: 'Baloo 2', cursive;
+}
+
+.nav-text {
+    padding-left: 20px;
+    padding-right: 20px ;
+
+    margin-left: 40px;
+    color: white;
+    text-decoration: none;
+    
+    font-size: 1.5rem;
+    font-weight: 500; 
+}
+
+.the-active {
+    border: 2px solid white;
+    border-radius: 44px;
+}
+
+.blink-left {
+    position: absolute;
+    top: 0;
+    left: 60px;
+    z-index: 1;
+}
+
+.blink-right {
+    position: absolute;
+    right: 72px;
+    bottom: 0;
+    z-index: 1;
+}
+
+.whatisultigraph__section {
+    border: 1px solid black;
+
+    display: flex;
+    justify-content: center;
+
+    position: relative;
+
+    gap: 12px;
+}
+
+.box-whatisultigraph__section {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+
+    border-radius: 32px;
+    border: 2px solid #ffffff;
+
+    padding: 36px;
+}
+
+.supergrafisbunga-kiri {
+    width: 460px;
+    position: absolute;
+    top: 0;
+    left: 10px;
+    z-index: -1;
+}
+
+.supergrafisbunga-kanan {
+    width: 460px;
+    position: absolute;
+    top: 0;
+    right: 10px;
+    z-index: -1;
+}
+
+.the-content {
+    padding: 80px;
+
+    border: 2px solid #ffffff;
+    border-radius: 20px;
+    background: rgba(236, 236, 236, 0.20);
+    -webkit-backdrop-filter: blur(8px);
+    backdrop-filter: blur(8px);
+}
+
+.the-content h1 {
+    margin-left: auto;
+    margin-right: auto;
+
+    font-family: 'Baloo 2', cursive;
+    font-weight: 500;
+
+    font-size: 3.25rem;
+
+    color: white;
+    background-color: #fd834b;
+    padding: 12px 32px;
+    border-radius: 44px;
+
+    max-width: fit-content;
+}
+
+.the-content p {
+    margin-top: 40px;
+
+    font-family: 'Baloo 2', cursive;
+    font-weight: 500;
+    font-size: 1.5rem;
+
+    color: white;
+}
+
+footer {
+    margin-top: 80px;
+    padding: 40px;
+    background-color: black;
+}
+
+footer h5 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: white;
+
+    margin-bottom: 20px;
+}
+
+.socialmedia {
+    display: flex;
+    gap: 40px;
+}
+
+.the-icon {
+    display: flex;
+    color: white;
+    gap: 8px;
+}
+
+@media screen and (max-width: 1800px) {
+
+}
+
+@media screen and (max-width: 1680px) {
+    /* .supergrafisbuga-kiri {
+        left: 240px;
+    }
+    
+    .supergrafisbuga-kanan {
+        right: 240px;
+    } */
+}
+
+@media screen and (max-width: 1440px) {
+    /* .supergrafisbuga-kiri {
+        left: 160px;
+    }
+    
+    .supergrafisbuga-kanan {
+        right: 160px;
+    } */
+}
+
+@media screen and (max-width: 1400px) {
+
+}
+
+@media screen and (max-width: 1300px) {
+    /* .supergrafisbuga-kiri {
+        left: 100px;
+    }
+    
+    .supergrafisbuga-kanan {
+        right: 100px;
+    } */
+}
+
+@media screen and (max-width: 1200px) {
+    .the-content h1 {
+        margin-left: auto;
+        margin-right: auto;
+    
+        font-family: 'Baloo 2', cursive;
+        font-weight: 500;
+    
+        font-size: 3.25rem;
+    
+        color: white;
+        background-color: #F37786;
+        padding: 12px 32px;
+        border-radius: 100px;
+    
+        max-width: fit-content;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    /* .supergrafisbuga-kiri {
+        left: 40px;
+    }
+    
+    .supergrafisbuga-kanan {
+        right: 40px;
+    } */
+
+}
+
+@media screen and (max-width: 1000px) {
+    .box-whatisultigraph__section {
+        text-align: center;
+        display: flex;
+        justify-content: center;
+    
+        border-radius: 32px;
+        border: 2px solid #ffffff;
+    
+        padding: 16px;
+    }
+
+    .the-content {
+        border: 2px solid #ffffff;
+        padding: 16px;
+    }
+
+    .the-content h1 {
+        font-size: 2rem;
+        border-radius: 100px;
+    } 
+
+    .the-content p {
+        font-size: 1.25rem;
+    
+        color: white;
+    }
+
+    .blink-left {
+        width: 100px;
+    }
+    
+    .blink-right {
+        width: 100px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+
+}
+
+@media screen and (max-width: 800px) {
+
+}
+
+@media screen and (max-width: 700px) {
+    .box-whatisultigraph__section {
+        border-radius: none;
+        border: none;
+    
+        padding: 0px;
+    }
+
+}
+
+@media screen and (max-width: 584px) {
+
+}
+
+@media screen and (max-width: 540px) {
+
+}
+
+@media screen and (max-width: 510px) {
+    /* .supergrafisbuga-kiri {
+        top: 220px;
+        width: 240px;
+        left: 40px;
+    }
+    
+    .supergrafisbuga-kanan {
+        top: 220px;
+        width: 240px;
+        right: 40px;
+    } */
+
+    .box-whatisultigraph__section {
+        padding: 4px;
+    }
+
+    .socialmedia {
+        display: grid;
+        grid-template-columns: auto;
+        gap: 20px;
+    }
+    
+}
+
+@media screen and (max-width: 454px) {
+    /* .supergrafisbuga-kiri {
+        top: 420px;
+        width: 140px;
+        left: 80px;
+    }
+    
+    .supergrafisbuga-kanan {
+        top: 420px;
+        width: 140px;
+        right: 80px;
+    } */
+}
