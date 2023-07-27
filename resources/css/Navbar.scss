@@ -41,7 +41,6 @@
     .navbar {
       display: flex;
       justify-content: space-between;
-      padding: 1.5vw 1.5vw;
       // background-color: #F37786;
     }
   
@@ -78,7 +77,6 @@
     .navbar {
       display: flex;
       justify-content: space-between;
-      padding: 1vw 1vw !important;
     }
   
     .logoNavbar {
@@ -119,7 +117,7 @@
   .navbar {
     display: flex;
     justify-content: space-between;
-    padding: 1.5vw 1.5vw;
+    padding-left: 1vw;
     // background-color: #F37786;
     /* background: #7083BC; */
     // box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
@@ -135,6 +133,9 @@
   }
   
   @media screen and (max-width: 800px) {
+    .navbar {
+      padding-left: 3vw;
+    }
     .navbar-kiri {
         display: flex;
     }
