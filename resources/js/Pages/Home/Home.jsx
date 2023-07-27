@@ -41,7 +41,7 @@ export default function Home({ auth, laravelVersion, phpVersion }){
     return (
         <>
 
-            <Navbar />
+            <Navbar color="#F37786" />
             <Head title="Home" />
             <div className="container">
                 <div className="header__section">

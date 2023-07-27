@@ -37,12 +37,12 @@ export default function AboutUs({ auth, laravelVersion, phpVersion }){
     // const swiper = useSwiper(swiperOptions);
     return(
         <>
-            <Navbar current="AboutUs" />
             <Head title="About Us" />
             <Swiper
                 modules={[Navigation,Pagination, EffectFade]}
                 // pagination={pagination}
                 effect="fade"
+                fadeEffect={{crossFade: true}}
                 navigation={true}
                 onSwiper={(swiper) => (swiperRef.current = swiper)}
                 className="mySwiper AboutUs__section"
@@ -50,6 +50,7 @@ export default function AboutUs({ auth, laravelVersion, phpVersion }){
                 {aboutData.map((data, index) => {
                     return (
                         <SwiperSlide key={index} style={{backgroundImage:`url(${data.img})`,backgroundSize:'100% auto',backgroundRepeat:"no-repeat"}}>
+                            <Navbar current="AboutUs" color={data.color} />
                             <div className="AboutUs__section__outerBorder">
                                 <img src={supergrafis1} className="supergrafis1" alt="" />
                                 <img src={supergrafis2} className="supergrafis2" alt="" />

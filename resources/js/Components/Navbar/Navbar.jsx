@@ -10,6 +10,7 @@ import { useState, useEffect, useRef } from "react";
 const Navbar = (props) => {
     const [current, setCurrent] = useState(props.current);
     const [hamburger, setHamburger] = useState(false);
+    const [color, setColor] = useState(props.color);
   
     const Hamburger = useRef(null);
   
@@ -30,7 +31,7 @@ const Navbar = (props) => {
 
     return (
         <>
-            <div className="navbar">
+            <div className="navbar" style={{backgroundColor:`${color}`}}>
                 <div className="navbar-kiri">
                     <a className="logoNavbar" href="#"><img src={LogoUMNPutih1} alt="logo umn" /></a>
                     <a className="logoNavbar" href="#"><img src={LogoDKVUMN} alt="logo dkv" /></a>
@@ -53,7 +54,7 @@ const Navbar = (props) => {
                     ≡
                 </button>
                 {hamburger ? (
-                    <div className="navbar-hamburger-content">
+                    <div className="navbar-hamburger-content" style={{backgroundColor:`${color}`}}>
                         <a className="navbar-mobile-content" href="/aboutus">About Us</a>
                         <a className="navbar-mobile-content" href="/event" disabled>Our Events</a>
                     </div>
