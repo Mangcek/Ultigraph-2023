@@ -16,16 +16,11 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 import 'swiper/css/effect-fade';
+import { useState } from 'react';
 
 export default function AboutUs({ auth, laravelVersion, phpVersion }){
 
-    // const pagination = {
-    //     el: '.swiper-pagination',
-    //     clickable: true,
-    //     renderBullet: function (index, className) {
-    //       return '<span class="' + className + '">' + (index + 1) + '</span>';
-    //     }
-    // };
+    const [navColor, setNavColor] = useState("#F37786");
     const swiperRef = useRef(null);
 
   // Function to handle slide navigation
@@ -45,6 +40,7 @@ export default function AboutUs({ auth, laravelVersion, phpVersion }){
                 fadeEffect={{crossFade: true}}
                 navigation={true}
                 onSwiper={(swiper) => (swiperRef.current = swiper)}
+                // onSlideChange={(swiper) => {setNavColor(aboutData[swiper.activeIndex].color)}}
                 className="mySwiper AboutUs__section"
             >
                 {aboutData.map((data, index) => {
@@ -55,8 +51,10 @@ export default function AboutUs({ auth, laravelVersion, phpVersion }){
                                 <img src={supergrafis1} className="supergrafis1" alt="" />
                                 <img src={supergrafis2} className="supergrafis2" alt="" />
                                 <div class="AboutUs__section__interBorder">
-                                    <h1 style={{backgroundColor:`${data.color}`}}>{data.title}</h1>
+                                    <div><h1 style={{backgroundColor:`${data.color}`}}>{data.title}</h1>
                                     <p>{data.description}</p>
+                                    </div>
+                                    
                                 </div>
                                 
                             </div>
@@ -71,6 +69,8 @@ export default function AboutUs({ auth, laravelVersion, phpVersion }){
                                 })}
                             </div>
                         </SwiperSlide>
+                        </>
+                        
                     )
                 })}
             </Swiper>
