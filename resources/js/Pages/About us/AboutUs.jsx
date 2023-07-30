@@ -32,6 +32,7 @@ export default function AboutUs({ auth, laravelVersion, phpVersion }){
     // const swiper = useSwiper(swiperOptions);
     return(
         <>
+            <Navbar current="AboutUs" color={navColor}/>
             <Head title="About Us" />
             <Swiper
                 modules={[Navigation,Pagination, EffectFade]}
@@ -40,12 +41,12 @@ export default function AboutUs({ auth, laravelVersion, phpVersion }){
                 fadeEffect={{crossFade: true}}
                 navigation={true}
                 onSwiper={(swiper) => (swiperRef.current = swiper)}
-                // onSlideChange={(swiper) => {setNavColor(aboutData[swiper.activeIndex].color)}}
+                onSlideChange={(swiper) => {setNavColor(aboutData[swiper.activeIndex].color)}}
                 className="mySwiper AboutUs__section"
             >
                 {aboutData.map((data, index) => {
                     return (
-                        <SwiperSlide key={index} style={{backgroundImage:`url(${data.img})`,backgroundSize:'100% auto',backgroundRepeat:"no-repeat"}}>
+                        <SwiperSlide key={index} style={{ backgroundImage: `url(${data.img})`, backgroundSize: window.innerWidth <= 1600 ? 'auto 100%' : 'cover',backgroundRepeat: 'no-repeat'}}>
                             <Navbar current="AboutUs" color={data.color} />
                             <div className="AboutUs__section__outerBorder">
                                 <img src={supergrafis1} className="supergrafis1" alt="" />
@@ -69,7 +70,6 @@ export default function AboutUs({ auth, laravelVersion, phpVersion }){
                                 })}
                             </div>
                         </SwiperSlide>
-                        </>
                         
                     )
                 })}
