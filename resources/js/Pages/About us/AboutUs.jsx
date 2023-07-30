@@ -32,7 +32,6 @@ export default function AboutUs({ auth, laravelVersion, phpVersion }){
     // const swiper = useSwiper(swiperOptions);
     return(
         <>
-            <Navbar current="AboutUs" color={navColor}/>
             <Head title="About Us" />
             <Swiper
                 modules={[Navigation,Pagination, EffectFade]}
@@ -41,7 +40,7 @@ export default function AboutUs({ auth, laravelVersion, phpVersion }){
                 fadeEffect={{crossFade: true}}
                 navigation={true}
                 onSwiper={(swiper) => (swiperRef.current = swiper)}
-                onSlideChange={(swiper) => {setNavColor(aboutData[swiper.activeIndex].color)}}
+                // onSlideChange={(swiper) => {setNavColor(aboutData[swiper.activeIndex].color)}}
                 className="mySwiper AboutUs__section"
             >
                 {aboutData.map((data, index) => {
