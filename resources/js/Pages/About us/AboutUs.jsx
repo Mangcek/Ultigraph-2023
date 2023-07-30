@@ -45,7 +45,7 @@ export default function AboutUs({ auth, laravelVersion, phpVersion }){
             >
                 {aboutData.map((data, index) => {
                     return (
-                        <SwiperSlide key={index} style={{ backgroundImage: `url(${data.img})`, backgroundSize: window.innerWidth <= 1600 ? 'auto 100%' : 'cover',backgroundRepeat: 'no-repeat'}}>
+                        <SwiperSlide key={index} style={{ backgroundImage: `url(${data.img})`, backgroundSize: window.innerWidth <= 1600 ? 'auto 100%' : '100% 100%',backgroundRepeat: 'no-repeat'}}>
                             <Navbar current="AboutUs" color={data.color} />
                             <div className="AboutUs__section__outerBorder">
                                 <img src={supergrafis1} className="supergrafis1" alt="" />
