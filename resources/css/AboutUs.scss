@@ -1,35 +1,63 @@
 // $descriptionBox_width_desktop : 77.91vw;
 $descriptionBox_height_desktop : 682px;
-$font_XXL:64px;
-$font_XL:52px;
-$font_L:42px;
-$font_M:30px;
-$font_S:26px;
-$font_XS:20px;
-$font_XXS:18px;
-$font_XXXS:16px;
-$font_XXXXS:14px;
+$font_XXL:36px;
+$font_XL:36px;
+$font_L:24px;
+$font_M:18px;
+$font_S:18px;
+$font_XS:14px;
+$font_XXS:12px;
+$font_XXXS:10px;
+$font_XXXXS:8px;
 
 @import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@400;500;600;700;800&display=swap');
+
+.AboutUs__section__swipe {
+    display: none;
+    margin-bottom: 10px;
+}
+
+.AboutUs__section__swipe h1 {
+    margin: 0px;
+    color: #ECECEC;
+    font-family: 'Baloo Bhaijaan 2', cursive;
+}
+
+.arrow-left {
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-bottom: 5px;
+    width: 10%;
+    height: 25%;
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+}
+
+.arrow-right {
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-bottom: 5px;
+    width: 10%;
+    height: 25%;
+}
 
 .AboutUs__section__outerBorder {
     // margin-top:150px;
     position:relative;
     width: fit-content;
-    height: fit-content;
+    height: 518px;
     border: 1px solid #000000;
     border-radius: 44px;
-    padding:34px 44px 45px 36px;
+    padding:36px 36px 34px 36px;
     border: 2px solid #ECECEC;
     background: rgba(217, 217, 217, 0.00);
     border-radius:44px;
-    margin-top:236px;
-    margin-left: 172px;
-    margin-right:172px;
+    margin-left:95px;
+    margin-right:95px;
 }
 .AboutUs__section__interBorder {
     width: 100%;
-    height: 682px;
+    height: 442px;
     // margin:
     // width:1482px;
     border-radius: 49px;
@@ -48,8 +76,8 @@ $font_XXXXS:14px;
     border-radius: 42px;
     margin:0px;
     // width: 420px;
-    height: 55px;
-    padding:15px 10px 0px 10px;
+    height: 56px;
+    padding:10px 50px 3px 50px;
     width: fit-content;
     height: fit-content;
     // flex-shrink: 0;
@@ -66,6 +94,7 @@ $font_XXXXS:14px;
     // width: 64.375vw;
     color: #FFF;
     // padding:0px 50px;
+    margin-top: 20px;
     text-align: center;
     font-family: 'Baloo Bhaijaan 2', cursive;
     font-size: $font_M;
@@ -74,7 +103,7 @@ $font_XXXXS:14px;
     line-height: normal;
 }
 .AboutUs__section__interBorder div {
-    padding:0px 134px;
+    padding:0px 90px;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -83,7 +112,7 @@ $font_XXXXS:14px;
 }
 
 .AboutUs__section__pagination {
-    margin-bottom: 60px;
+    margin-bottom: 50px;
     display: flex;
     justify-content: center;
 }
@@ -97,18 +126,22 @@ $font_XXXXS:14px;
 }
 
 .swiper {
-    height:fit-content;
-    // height:100vh;
+    width: 100%;
+    height:100%;
 }
 
 .swiper-slide {
-    // display:flex !important;
-    // flex-direction:column;
-    // justify-content:center;
-    // align-items:center;
-    // margin-top:86px;
-    // height:100vh;
-    // padding-bottom: 100px;
+    position: relative;
+    display:flex !important;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    margin-top: 80px;
+    padding-top: 50px;
+    height:100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover !important;
 }
 
 .swiper-button-next::after, .swiper-button-prev::after {
@@ -145,39 +178,31 @@ $font_XXXXS:14px;
     bottom:0;
     right:0;
 }
+
 @media(max-width:1400px){
     .AboutUs__section__outerBorder {
-        margin-top: 150px;
-        margin-left: 80px;
-        margin-right:80px;
+        margin-left:95px;
+        margin-right:95px;
     }
     .AboutUs__section__interBorder {
-        height: 882px;
+        height: 442px;
     }
     .AboutUs__section__interBorder p {
         font-size: $font_S;
     }
     .AboutUs__section__interBorder h1 {
         font-size: $font_XL;
-    }
-    .AboutUs__section__interBorder div {
-        padding:0px 94px;
-        text-align: center;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
     }
 }
 
 @media(max-width:1200px){
     .AboutUs__section__outerBorder {
-        margin-top: 150px;
-        margin-left: 80px;
-        margin-right:80px;
+        margin-top: 40px;
+        margin-left:95px;
+        margin-right:95px;
     }
     .AboutUs__section__interBorder {
-        height: 882px;
+        height: 442px;
     }
     .AboutUs__section__interBorder p {
         font-size: $font_S;
@@ -185,23 +210,77 @@ $font_XXXXS:14px;
     .AboutUs__section__interBorder h1 {
         font-size: $font_XL;
     }
-    .AboutUs__section__interBorder div {
-        padding:0px 94px;
-        text-align: center;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
 }
-@media (max-width:900px){
+
+@media (max-width:1147px) {
     .AboutUs__section__outerBorder {
-        margin-top: 150px;
-        margin-left: 50px;
-        margin-right:50px;
+        height: 472px;
     }
     .AboutUs__section__interBorder {
-        height: 682px;
+        height: 400px;
+    }
+    .AboutUs__section__interBorder h1 {
+        margin-top: 50px;
+    }
+    .AboutUs__section__interBorder p {
+        margin-bottom: 40px;
+    }
+}
+
+@media (max-width:1024px) {
+    .AboutUs__section__outerBorder {
+        height: 962px;
+    }
+    .AboutUs__section__interBorder {
+        height: 892px;
+    }
+    .AboutUs__section__interBorder p {
+        font-size: 24px;
+    }
+    .AboutUs__section__interBorder h1 {
+        font-size: 36px;
+    }
+}
+
+@media (max-width:900px){
+    .AboutUs__section__outerBorder {
+        margin-top: 30px;
+    }
+    .AboutUs__section__outerBorder {
+        height: 762px;
+    }
+    .AboutUs__section__interBorder {
+        height: 692px;
+    }
+    .AboutUs__section__interBorder p {
+        font-size: 20px;
+    }
+    .AboutUs__section__interBorder h1 {
+        font-size: 32px;
+    }
+    .supergrafis1 {
+        position:absolute;
+        top:0;
+        left:0;
+        width:110px;
+    }
+    .supergrafis2 {
+        position:absolute;
+        bottom:0;
+        right:0;
+        width:110px;
+    }
+}
+
+@media (max-width:800px){
+    .AboutUs__section__outerBorder {
+        margin-top: 10px;
+    }
+    .AboutUs__section__outerBorder {
+        height: 532px;
+    }
+    .AboutUs__section__interBorder {
+        height: 462px;
     }
     .AboutUs__section__interBorder p {
         font-size: $font_XS;
@@ -210,7 +289,7 @@ $font_XXXXS:14px;
         font-size: $font_L;
     }
     .AboutUs__section__interBorder div {
-        padding:0px 74px;
+        padding:0px 40px;
         text-align: center;
         display: flex;
         flex-direction: column;
@@ -221,131 +300,46 @@ $font_XXXXS:14px;
 
 @media (max-width:768px){
     .AboutUs__section__outerBorder {
-        margin-top: 150px;
-        margin-left: 50px;
-        margin-right:50px;
-        padding:28px 30px 39px 30px;
+        height: 652px;
     }
     .AboutUs__section__interBorder {
         height: 582px;
     }
     .AboutUs__section__interBorder p {
-        font-size: $font_XXS;
+        font-size: 17px;
     }
     .AboutUs__section__interBorder h1 {
-        font-size: $font_M;
-    }
-    .AboutUs__section__interBorder div {
-        padding:0px 60px;
-        text-align: center;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    .supergrafis1 {
-        position:absolute;
-        top:0;
-        left:0;
-        width:110px;
-    }
-    .supergrafis2 {
-        position:absolute;
-        bottom:0;
-        right:0;
-        width:110px;
-    }
-}
-@media(max-width:640px){
-    .AboutUs__section__outerBorder {
-        margin-top: 120px;
-        margin-left: 40px;
-        margin-right:40px;
-        padding:22px 24px 33px 24px;
-    }
-    .AboutUs__section__interBorder {
-        height: 582px;
-    }
-    .AboutUs__section__interBorder p {
-        font-size: $font_XXXS;
-    }
-    .AboutUs__section__interBorder h1 {
-        font-size: $font_S;
-    }
-    .AboutUs__section__interBorder div {
-        padding:0px 40px;
-        text-align: center;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    .supergrafis1 {
-        position:absolute;
-        top:0;
-        left:0;
-        width:80px;
-    }
-    .supergrafis2 {
-        position:absolute;
-        bottom:0;
-        right:0;
-        width:80px;
+        font-size: 26px;
     }
 }
 
-@media (max-width:500px){
+@media (max-width:742px){
     .AboutUs__section__outerBorder {
-        margin-top: 120px;
-        margin-left: 30px;
-        margin-right:30px;
-        padding:22px 24px 33px 24px;
+        height: 652px;
     }
     .AboutUs__section__interBorder {
-        height: 542px;
+        height: 582px;
     }
     .AboutUs__section__interBorder p {
-        font-size: $font_XXXXS;
+        font-size: 16px;
     }
     .AboutUs__section__interBorder h1 {
-        font-size: $font_XS;
-    }
-    .AboutUs__section__interBorder div {
-        padding:0px 40px;
-        text-align: center;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    .supergrafis1 {
-        position:absolute;
-        top:0;
-        left:0;
-        width:80px;
-    }
-    .supergrafis2 {
-        position:absolute;
-        bottom:0;
-        right:0;
-        width:80px;
+        font-size: 24px;
     }
 }
-@media (max-width:400px){
+
+@media(max-width:680px){
     .AboutUs__section__outerBorder {
-        margin-top: 120px;
-        margin-left: 20px;
-        margin-right:20px;
-        padding:16px 18px 27px 18px;
-    }
-    .AboutUs__section__interBorder {
         height: 502px;
     }
+    .AboutUs__section__interBorder {
+        height: 432px;
+    }
     .AboutUs__section__interBorder p {
-        font-size: $font_XXXXS;
+        font-size: 14px;
     }
     .AboutUs__section__interBorder h1 {
-        font-size: $font_XXS;
+        font-size: 22px;
     }
     .AboutUs__section__interBorder div {
         padding:0px 20px;
@@ -367,25 +361,184 @@ $font_XXXXS:14px;
         right:0;
         width:80px;
     }
-    
-.swiper-button-prev {
-    margin-top: 10px !important;
-    margin-left: -5px !important;
-    width: 50px !important;
-    height: 50px !important;
-    background-repeat: no-repeat;
-    background-size: 50px 50px;
-    background-image: url("../assets/img/left arrow.svg") !important;
-  }
-  
-.swiper-button-next {
-    margin-top: 10px !important;
-    margin-right:-5px !important;
-    width: 50px !important;
-    height: 50px !important;
-    background-repeat: no-repeat;
-    background-size: 50px 50px;
-    background-image: url("../assets/img/right arrow.svg") !important;
-  }
 }
 
+@media(max-width:640px){
+    .AboutUs__section__outerBorder {
+        height: 452px;
+    }
+    .AboutUs__section__interBorder {
+        height: 382px;
+    }
+    .AboutUs__section__interBorder p {
+        font-size: 12px;
+    }
+    .AboutUs__section__interBorder h1 {
+        padding:10px 30px 3px 30px;
+        font-size: 20px;
+    }
+    .AboutUs__section__interBorder div {
+        padding:0px 10px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media(max-width:585px){
+    .AboutUs__section__outerBorder {
+        margin-left:50px;
+        margin-right:50px;
+    }
+
+    .AboutUs__section__interBorder div {
+        padding:0px 30px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .swiper-button-next, .swiper-button-prev {
+        display: none !important;
+    }
+
+    .AboutUs__section__swipe {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+    }
+}
+
+@media(max-width:525px){
+    .AboutUs__section__outerBorder {
+        padding:20px 20px 20px 20px;
+        height: 452px;
+    }
+    .AboutUs__section__interBorder {
+        height: 402px;
+    }
+
+    .AboutUs__section__interBorder div {
+        padding:0px 20px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media(max-width:460px){
+    .swiper-slide {
+        margin-top: 60px;
+        padding-top: 50px;
+    }
+
+    .AboutUs__section__outerBorder {
+        margin-left:30px;
+        margin-right:30px;
+        height: 472px;
+    }
+
+    .AboutUs__section__interBorder {
+        height: 422px;
+    }
+}
+
+@media(max-width:433px){
+    .swiper-slide {
+        margin-top: 60px;
+        padding-top: 50px;
+    }
+
+    .AboutUs__section__outerBorder {
+        margin-left:30px;
+        margin-right:30px;
+        height: 502px;
+    }
+
+    .AboutUs__section__interBorder {
+        height: 452px;
+    }
+
+    .AboutUs__section__interBorder h1 {
+        padding:10px 20px 3px 20px;
+        font-size: 20px;
+    }
+}
+
+@media(max-width:380px){
+    .swiper-slide {
+        margin-top: 60px;
+        padding-top: 50px;
+    }
+
+    .AboutUs__section__outerBorder {
+        height: 562px;
+    }
+
+    .AboutUs__section__interBorder {
+        height: 512px;
+    }
+
+    .AboutUs__section__interBorder h1 {
+        padding:10px 10px 3px 10px;
+        font-size: 20px;
+    }
+}
+
+@media(max-width:355px){
+    .AboutUs__section__outerBorder {
+        height: 592px;
+    }
+
+    .AboutUs__section__interBorder {
+        height: 542px;
+    }
+
+    .AboutUs__section__interBorder h1 {
+        padding:10px 10px 3px 10px;
+        font-size: 18px;
+    }
+}
+
+@media(max-width:321px){
+    .AboutUs__section__outerBorder {
+        height: 652px;
+    }
+
+    .AboutUs__section__interBorder {
+        height: 602px;
+    }
+
+    .AboutUs__section__interBorder h1 {
+        padding:10px 10px 3px 10px;
+        font-size: 16px;
+    }
+}
+
+@media(max-width:281px){
+    .swiper-slide {
+        margin-top: 30px;
+        padding-top: 50px;
+    }
+
+    .AboutUs__section__outerBorder {
+        height: 792px;
+    }
+
+    .AboutUs__section__interBorder {
+        height: 742px;
+    }
+
+    .AboutUs__section__interBorder h1 {
+        padding:10px 10px 3px 10px;
+        font-size: 12px;
+    }
+}
