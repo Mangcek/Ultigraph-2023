@@ -1,0 +1,389 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@400;500;600;700;800&display=swap');
+
+// .body{
+//     background-color: #ECECEC;
+// }
+
+.body{
+    background-color: #ECECEC;
+}
+
+.ourevent {
+    padding-top: 25vh;
+    background-color: #ECECEC;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+
+    h1 {
+        margin: auto 0.8vw;
+        margin-top: 2vh;
+        font-family: 'Baloo Bhaijaan 2', cursive;
+        font-size: 5vw;
+        color: #F37437;
+        text-shadow: 2px 2px 5px rgba(243, 119, 134, 0.44);
+    }
+    
+    .cahaya{
+        width: 5vw;
+        margin: auto 0;
+    }
+}
+
+.theEvents{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3vw;
+}
+
+.boxEvents{
+    width: 83vw;
+    height: 17.6vw;
+    border-radius: 25px;
+    background-color: #EEC8CC;
+    margin-bottom: 50px;
+}
+
+#event4{
+    height: 19vw;
+}
+
+//PRE-EVENT
+.preEvent{
+    display: flex;
+    justify-content: center;
+    margin-top: 2vw;
+
+}
+
+.preEvent{
+    h2 {
+        text-align: center;
+        font-size: 2vw;
+        width: 16vw;
+        height: fit-content;
+        color: white;
+        box-shadow: -5px 5px 4px 0px rgba(0, 0, 0, 0.25);
+        font-family: 'Baloo Bhaijaan 2', cursive;
+        background-color: #F37786;
+        border: 1px solid #F37786;
+        border-radius: 40px;
+        border-width: 10px;
+        margin: auto 0.5vw auto 0;
+    }
+
+    hr{
+        width: 37vw;
+        height: 0.2vw;
+        background-color: #FFFFFF;
+        opacity: 1;
+        border: 1px solid #FFFFFF;
+        border-radius: 40px;
+        margin: auto 2.5vw;
+    }
+    
+
+    h3{
+        font-size: 1.6vw;
+        font-weight: bold;
+        margin: auto 0 auto 0.5vw;
+        // margin-top: 10px;
+        color: #E86575;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+    }
+
+}
+
+.descBox{
+    display: flex;
+    height: 23vh;
+    p{
+        padding: 1.5vw;
+        margin: auto 3vw;
+        color: #E86575;
+        font-family: Baloo Bhaijaan 2;
+        font-size: 1.25vw;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 2.5vw;
+    }
+}
+
+//SEMINAR WORKSHOP
+.semWork{
+    display: flex;
+    justify-content: center;
+    margin-top: 2vw;
+}
+
+.semWork{
+    h2 {
+        text-align: center;
+        font-size: 2vw;
+        width: 25vw;
+        height: fit-content;
+        color: white;
+        // background: #F37437;
+        box-shadow: -5px 5px 4px 0px rgba(0, 0, 0, 0.25);
+        font-family: 'Baloo Bhaijaan 2', cursive;
+        background-color: #F37437;
+        border: 1px solid #F37437;
+        border-radius: 40px;
+        border-width: 10px;
+        margin: auto 0.5vw auto 0;
+    }
+
+    hr{
+        width: 29vw;
+        height: 0.2vw;
+        background-color: #FFFFFF;
+        opacity: 1;
+        border: 1px solid #FFFFFF;
+        border-radius: 40px;
+        margin: auto 2.5vw;
+    }
+
+    h3{
+        font-size: 1.6vw;
+        font-weight: bold;
+        margin: auto 0 auto 0.5vw;
+        // margin-top: 10px;
+        color: #E86575;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+    }
+
+}
+
+
+//COMPETITITON
+.competition{
+    display: flex;
+    justify-content: center;
+    margin-top: 2vw;
+
+}
+
+.competition{
+    h2 {
+        text-align: center;
+        font-size: 2vw;
+        width: 17vw;
+        height: fit-content;
+        color: white;
+        box-shadow: -5px 5px 4px 0px rgba(0, 0, 0, 0.25);
+        font-family: 'Baloo Bhaijaan 2', cursive;
+        background-color: #F37786;
+        border: 1px solid #F37786;
+        border-radius: 40px;
+        border-width: 10px;
+        margin: auto 0.5vw auto 0;
+    }
+
+    hr{
+        width: 29vw;
+        height: 0.2vw;
+        background-color: #FFFFFF;
+        opacity: 1;
+        border: 1px solid #FFFFFF;
+        border-radius: 40px;
+        margin: auto 2.5vw;
+    }
+
+    h3{
+        font-size: 1.6vw;
+        font-weight: bold;
+        margin: auto 0 auto 0.5vw;
+        // margin-top: 10px;
+        color: #E86575;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+    }
+
+}
+
+
+//EXHIBITION
+.exhibition{
+    display: flex;
+    justify-content: center;
+    margin-top: 2vw;
+    // margin-bottom: 2vw;
+}
+
+.exhibition{
+    h2 {
+        text-align: center;
+        font-size: 2vw;
+        width: 16vw;
+        height: fit-content;
+        color: white;
+        // background: #F37437;
+        box-shadow: -5px 5px 4px 0px rgba(0, 0, 0, 0.25);
+        font-family: 'Baloo Bhaijaan 2', cursive;
+        background-color: #F37437;
+        border: 1px solid #F37437;
+        border-radius: 40px;
+        border-width: 10px;
+        margin: auto 0.5vw auto 0;
+    }
+
+    hr{
+        width: 39vw;
+        height: 0.2vw;
+        background-color: #FFFFFF;
+        opacity: 1;
+        border: 1px solid #FFFFFF;
+        border-radius: 40px;
+        margin: auto 2.5vw;
+    }
+
+    h3{
+        font-size: 1.6vw;
+        font-weight: bold;
+        margin: auto 0 auto 0.5vw;
+        // margin-top: 10px;
+        color: #E86575;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+    }
+
+}
+
+//AWARDING NIGHT
+.awarding{
+    display: flex;
+    justify-content: center;
+    margin-top: 2vw;
+
+}
+
+.awarding{
+    h2 {
+        text-align: center;
+        font-size: 2vw;
+        width: 21vw;
+        height: fit-content;
+        color: white;
+        box-shadow: -5px 5px 4px 0px rgba(0, 0, 0, 0.25);
+        font-family: 'Baloo Bhaijaan 2', cursive;
+        background-color: #F37786;
+        border: 1px solid #F37786;
+        border-radius: 40px;
+        border-width: 10px;
+        margin: auto 0.5vw auto 0;
+    }
+
+    hr{
+        width: 35vw;
+        height: 0.2vw;
+        background-color: #FFFFFF;
+        opacity: 1;
+        border: 1px solid #FFFFFF;
+        border-radius: 40px;
+        margin: auto 2.5vw;
+    }
+
+    h3{
+        font-size: 1.6vw;
+        font-weight: bold;
+        margin: auto 0 auto 0.5vw;
+        // margin-top: 10px;
+        color: #E86575;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+    }
+
+}
+
+@media(max-width:1200px){
+    .title{
+        padding-top: 10vh;
+    }
+}
+
+@media(max-width:880px){
+    .title{
+        padding-top: 5vh;
+    }
+}
+
+@media(max-width:850px) {
+    .title{
+        padding-top: 3vh;
+    }
+
+    .boxEvents{
+        height: 20vw;
+    }
+
+    #event4{
+        height: 21vw;
+    }
+}
+
+@media(max-width:800px){
+    .title{
+        padding-top: 3vh;
+    }
+}
+
+@media(max-width:700px){
+    .title{
+        padding-top: 1vh;
+    }
+
+    .descBox{
+        p{
+            margin-top: 1vh;
+        }
+    }
+}
+
+@media(max-width:500px){
+    .theEvents {
+        .boxEvents {
+            .preEvent {
+                h2 {
+                    font-size: 1.8vw;
+                }
+            }
+        }
+    }
+}
+
+@media(max-width:376px){
+    .ourevent {
+        padding-top: 12vh;
+        background-color: #ECECEC;
+    }
+
+    .boxEvents{
+        height: 27vw;
+    }
+
+    #event4{
+        height: 32vw;
+    }
+
+    .semWork{
+        h2{
+            width: 27vw;
+        }
+    }
+
+    .descBox{
+        p{
+            font-size: 1.7vw;
+        }
+    }
+}
