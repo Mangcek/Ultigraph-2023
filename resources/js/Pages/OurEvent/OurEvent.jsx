@@ -1,3 +1,5 @@
+import { Link, Head } from '@inertiajs/react';
+
 import Navbar from "../../Components/Navbar/Navbar";
 import Footer from "../../Components/Footer/Footer";
 import "../../../css/OurEvent.scss";
@@ -41,7 +43,8 @@ export default function OurEvent({ auth, laravelVersion, phpVersion }){
 
     return (
         <>
-            <Navbar />
+            <Head title="Our Event" />
+            <Navbar current="Event"/>
             <div className="ourevent">
                 <div className="title">
                     <img className="cahaya" src={lightPurple} />

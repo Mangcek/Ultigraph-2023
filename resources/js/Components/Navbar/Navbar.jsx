@@ -45,7 +45,7 @@ const Navbar = (props) => {
                         }
                         {current == "Event" 
                             ? (<a href="/event"><button className="navbar-dropdown-button current">Our Events</button></a>) 
-                            : (<a href="/event"><button className="navbar-dropdown-button" disabled>Our Events</button></a>) 
+                            : (<a href="/event"><button className="navbar-dropdown-button">Our Events</button></a>) 
                         }
                     </div>
                 </div>
@@ -56,7 +56,7 @@ const Navbar = (props) => {
                 {hamburger ? (
                     <div className="navbar-hamburger-content" style={{backgroundColor:`${color}`}}>
                         <a className="navbar-mobile-content" href="/aboutus">About Us</a>
-                        <a className="navbar-mobile-content" href="/event" disabled>Our Events</a>
+                        <a className="navbar-mobile-content" href="/event">Our Events</a>
                     </div>
                 ) : null}
                 </div>
