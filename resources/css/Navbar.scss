@@ -243,8 +243,8 @@
   }
   
   .navbar-mobile a:hover {
-    // background-color: #de6d7a;
-    background-color: rgba(0,0,0,0.15);
+    background-color: #de6d7a;
+    // background-color: rgba(0,0,0,0.15);
   }
   
   .navbar-hamburger-content {
@@ -267,6 +267,11 @@
     padding: 12px !important;
     text-decoration: none;
     font-size: 3vw !important;
+    background-color: #F37786;
+  }
+
+  .navbar-mobile-content:hover {
+    background-color: #de6d7a;
   }
   
   .navbar-mobile-dropdown-button {

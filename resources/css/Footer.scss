@@ -1,32 +1,58 @@
 footer {
     padding: 40px;
     background-color: black;
-}
 
-footer h5 {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 1.5rem;
-    font-weight: 400;
-    color: white;
+    h5 {
+        font-family: 'Open Sans', sans-serif;
+        font-size: 1.5rem;
+        font-weight: 400;
+        color: white;
 
-    margin-bottom: 20px;
-}
+        margin-bottom: 20px;
+    }
 
-.socialmedia {
-    display: flex;
-    gap: 40px;
-}
+    .socialmedia {
+        display: flex;
+        gap: 40px;
+    }
 
-.the-icon {
-    display: flex;
-    color: white;
-    gap: 8px;
+    .the-icon {
+        display: flex;
+        color: white;
+        gap: 8px;
+        
+        img {
+            width: 2rem;
+        }
+        p {
+            font-size: 1rem;
+        }
+    }
 }
 
 @media screen and (max-width: 510px) {
-    .socialmedia {
-        display: grid;
-        grid-template-columns: auto;
-        gap: 20px;
+    footer {
+        h5 {
+            font-size: 1rem;
+        }
+
+        .socialmedia {
+            display: grid;
+            grid-template-columns: auto;
+            gap: 20px;
+        }
+
+        .the-icon {
+            display: flex;
+            color: white;
+            gap: 8px;
+
+            img {
+                width: 1.5rem;
+            }
+            p {
+                font-size: 0.8rem;
+            }
+        }
     }
 }
