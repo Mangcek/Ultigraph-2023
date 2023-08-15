@@ -1,9 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@400;500;600;700;800&display=swap');
 
-// .body{
-//     background-color: #ECECEC;
-// }
-
 .body{
     background-color: #ECECEC;
 }
@@ -32,6 +28,57 @@
     }
 }
 
+.evTitle{
+    display: flex;
+    width: 16vw;
+    height: 4vw;
+    background-color: #F37786;
+    border-radius: 40px;
+    box-shadow: -5px 5px 4px 0px rgba(0, 0, 0, 0.25);
+    margin: auto 0.5vw auto 0;
+    
+
+    h2 {
+        text-align: center;
+        font-size: 2vw;
+        color: white;
+        margin: auto;
+        font-family: 'Baloo Bhaijaan 2', cursive;
+    }
+}
+
+#abu1 {
+    width: 16vw;
+    height: 4vw;
+    background-color: #E86575;
+}
+
+#oren1 { 
+    background-color: #F37437;
+    width: 25vw;
+    height: 4vw;
+}
+
+#abu2 {
+    width: 17vw;
+    height: 4vw;
+    background-color: #E86575;
+}
+
+#oren2 { 
+    background-color: #F37437;
+    width: 16vw;
+    height: 4vw;
+}
+
+#abu3 {
+    width: 20vw;
+    height: 4vw;
+    background-color: #E86575;
+}
+
+
+
 .theEvents{
     display: flex;
     flex-direction: column;
@@ -44,7 +91,7 @@
     height: 17.6vw;
     border-radius: 25px;
     background-color: #EEC8CC;
-    margin-bottom: 50px;
+    margin-bottom: 5vw;
 }
 
 #event4{
@@ -60,20 +107,6 @@
 }
 
 .preEvent{
-    h2 {
-        text-align: center;
-        font-size: 2vw;
-        width: 16vw;
-        height: fit-content;
-        color: white;
-        box-shadow: -5px 5px 4px 0px rgba(0, 0, 0, 0.25);
-        font-family: 'Baloo Bhaijaan 2', cursive;
-        background-color: #F37786;
-        border: 1px solid #F37786;
-        border-radius: 40px;
-        border-width: 10px;
-        margin: auto 0.5vw auto 0;
-    }
 
     hr{
         width: 37vw;
@@ -122,22 +155,6 @@
 }
 
 .semWork{
-    h2 {
-        text-align: center;
-        font-size: 2vw;
-        width: 25vw;
-        height: fit-content;
-        color: white;
-        // background: #F37437;
-        box-shadow: -5px 5px 4px 0px rgba(0, 0, 0, 0.25);
-        font-family: 'Baloo Bhaijaan 2', cursive;
-        background-color: #F37437;
-        border: 1px solid #F37437;
-        border-radius: 40px;
-        border-width: 10px;
-        margin: auto 0.5vw auto 0;
-    }
-
     hr{
         width: 29vw;
         height: 0.2vw;
@@ -161,7 +178,6 @@
 
 }
 
-
 //COMPETITITON
 .competition{
     display: flex;
@@ -171,21 +187,6 @@
 }
 
 .competition{
-    h2 {
-        text-align: center;
-        font-size: 2vw;
-        width: 17vw;
-        height: fit-content;
-        color: white;
-        box-shadow: -5px 5px 4px 0px rgba(0, 0, 0, 0.25);
-        font-family: 'Baloo Bhaijaan 2', cursive;
-        background-color: #F37786;
-        border: 1px solid #F37786;
-        border-radius: 40px;
-        border-width: 10px;
-        margin: auto 0.5vw auto 0;
-    }
-
     hr{
         width: 29vw;
         height: 0.2vw;
@@ -219,22 +220,6 @@
 }
 
 .exhibition{
-    h2 {
-        text-align: center;
-        font-size: 2vw;
-        width: 16vw;
-        height: fit-content;
-        color: white;
-        // background: #F37437;
-        box-shadow: -5px 5px 4px 0px rgba(0, 0, 0, 0.25);
-        font-family: 'Baloo Bhaijaan 2', cursive;
-        background-color: #F37437;
-        border: 1px solid #F37437;
-        border-radius: 40px;
-        border-width: 10px;
-        margin: auto 0.5vw auto 0;
-    }
-
     hr{
         width: 39vw;
         height: 0.2vw;
@@ -267,23 +252,8 @@
 }
 
 .awarding{
-    h2 {
-        text-align: center;
-        font-size: 2vw;
-        width: 21vw;
-        height: fit-content;
-        color: white;
-        box-shadow: -5px 5px 4px 0px rgba(0, 0, 0, 0.25);
-        font-family: 'Baloo Bhaijaan 2', cursive;
-        background-color: #F37786;
-        border: 1px solid #F37786;
-        border-radius: 40px;
-        border-width: 10px;
-        margin: auto 0.5vw auto 0;
-    }
-
     hr{
-        width: 35vw;
+        width: 36vw;
         height: 0.2vw;
         background-color: #FFFFFF;
         opacity: 1;
@@ -305,35 +275,73 @@
 
 }
 
-@media(max-width:1200px){
-    .title{
-        padding-top: 10vh;
-    }
-}
 
-@media(max-width:880px){
+@media(max-width:1200px){
     .title{
         padding-top: 5vh;
     }
+    .boxEvents{
+        height: 19vw;
+    }
+    #event4{
+        height: 23vw;
+    }
+    .descBox{
+        p{
+            font-size: 1.5vw;
+            margin: auto 3vw;
+        }
+    }
 }
 
-@media(max-width:850px) {
+@media(max-width:1150px){
     .title{
         padding-top: 3vh;
     }
 
     .boxEvents{
-        height: 20vw;
+        height: 21vw;
+    }
+    #event4{
+        height: 24vw;
+    }
+    .descBox{
+        p{
+            font-size: 1.75vw;
+            margin: auto 3vw;
+            // margin-top: vh;
+        }
+    }
+}
+
+@media(max-width:920px){
+    .title{
+        padding-top: 1vh;
     }
 
-    #event4{
+    .boxEvents{
         height: 21vw;
+    }
+    #event4{
+        height: 26vw;
+    }
+    .descBox{
+        p{
+            font-size: 1.75vw;
+            margin: 1vw 3vw;
+        }
+    }
+}
+
+@media(max-width:880px){
+    .title{
+        padding-top: 1vh;
     }
 }
 
 @media(max-width:800px){
     .title{
-        padding-top: 3vh;
+        padding-top: 1vh;
     }
 }
 
@@ -349,41 +357,68 @@
     }
 }
 
+@media(max-width:650px){
+    .title{
+        padding-top: 1vh;
+        padding-bottom: 1vh;
+    }
+    .boxEvents{
+        height: 27vw;
+    }
+    #event4{
+        height: 35.5vw;
+    }
+    .descBox{
+        p{
+            font-size: 2.25vw;
+            margin: 1.5vw 3vw;
+            font-weight: 500;
+            line-height: 3vw;
+        }
+    }
+}
+
 @media(max-width:500px){
-    .theEvents {
-        .boxEvents {
-            .preEvent {
-                h2 {
-                    font-size: 1.8vw;
-                }
-            }
+    .title{
+        padding-top: 1vh;
+        padding-bottom: 1vh;
+    }
+    .boxEvents{
+        height: 27.5vw;
+    }
+    #event4{
+        height: 35.5vw;
+    }
+    .descBox{
+        p{
+            font-size: 2.25vw;
+            margin: 1.5vw 3vw;
+            font-weight: 500;
+            line-height: 3vw;
         }
     }
 }
 
 @media(max-width:376px){
     .ourevent {
-        padding-top: 12vh;
+        padding-top: 18vh;
         background-color: #ECECEC;
     }
 
     .boxEvents{
-        height: 27vw;
+        height: 33vw;
     }
 
     #event4{
-        height: 32vw;
-    }
-
-    .semWork{
-        h2{
-            width: 27vw;
-        }
+        height: 41vw;
     }
 
     .descBox{
         p{
-            font-size: 1.7vw;
+            font-size: 2.5vw;
+            margin: 2vw 3vw;
+            font-weight: 500;
+            line-height: 3.5vw;
         }
     }
 }

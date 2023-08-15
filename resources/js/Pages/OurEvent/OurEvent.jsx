@@ -70,7 +70,9 @@ export default function OurEvent({ auth, laravelVersion, phpVersion }){
                 <div className="theEvents">
                     <div className="boxEvents">
                         <div className="preEvent">
-                            <h2>PRE-EVENT</h2>
+                            <div className="evTitle" id='abu1'>
+                                <h2>PRE-EVENT</h2>
+                            </div>
                             <hr />
                             <h3>12-22 September 2023</h3>
                         </div>
@@ -80,7 +82,9 @@ export default function OurEvent({ auth, laravelVersion, phpVersion }){
                     </div>
                     <div className="boxEvents">
                         <div className="semWork">
-                            <h2>SEMINAR & WORKSHOP</h2>
+                            <div className="evTitle" id='oren1'>
+                                <h2>SEMINAR & WORKSHOP</h2>
+                            </div>
                             <hr />
                             <h3>6-10 November 2023</h3>
                         </div>
@@ -90,7 +94,9 @@ export default function OurEvent({ auth, laravelVersion, phpVersion }){
                     </div>
                     <div className="boxEvents">
                         <div className="competition">
-                            <h2>COMPETITION</h2>
+                            <div className="evTitle" id='abu2'>
+                                <h2>COMPETITION</h2>
+                            </div>
                             <hr />
                             <h3>23 September - 28 Oktober 2023</h3>
                         </div>
@@ -100,7 +106,9 @@ export default function OurEvent({ auth, laravelVersion, phpVersion }){
                     </div>
                     <div className="boxEvents" id="event4">
                         <div className="exhibition">
-                            <h2>EXHIBITION</h2>
+                            <div className="evTitle" id='oren2'>
+                                <h2>EXHIBITION</h2>
+                            </div>
                             <hr />
                             <h3>6-17 November 2023</h3>
                         </div>
@@ -110,7 +118,10 @@ export default function OurEvent({ auth, laravelVersion, phpVersion }){
                     </div>
                     <div className="boxEvents">
                         <div className="awarding">
-                            <h2>AWARDING NIGHT</h2>
+                            <div className="evTitle" id='abu3'>
+                                <h2>AWARDING NIGHT</h2>
+                            </div>
+                            
                             <hr />
                             <h3>11 November 2023</h3>
                         </div>
