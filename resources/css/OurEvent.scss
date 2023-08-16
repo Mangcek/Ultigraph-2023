@@ -15,7 +15,7 @@
 
     h1 {
         margin: auto 0.8vw;
-        margin-top: 2vh;
+        margin-top: 1vh; 
         font-family: 'Baloo Bhaijaan 2', cursive;
         font-size: 5vw;
         color: #F37437;
@@ -399,7 +399,7 @@
     }
 }
 
-@media(max-width:420px){
+@media(max-width:450px){
     .ourevent {
     padding-top: 20vh;
     }
@@ -426,9 +426,11 @@
 @media(max-width:376px){
     .ourevent {
         padding-top: 15vh;
-        background-color: #ECECEC;
+        }
+    .title{
+        padding-top: 2vh;
+        padding-bottom: 1vh;
     }
-
     .boxEvents{
         height: 33vw;
     }
