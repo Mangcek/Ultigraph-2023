@@ -399,9 +399,33 @@
     }
 }
 
+@media(max-width:420px){
+    .ourevent {
+    padding-top: 20vh;
+    }
+    .title{
+        padding-top: 1vh;
+        padding-bottom: 1vh;
+    }
+    .boxEvents{
+        height: 27.5vw;
+    }
+    #event4{
+        height: 35.5vw;
+    }
+    .descBox{
+        p{
+            font-size: 2.25vw;
+            margin: 1.5vw 3vw;
+            font-weight: 500;
+            line-height: 3vw;
+        }
+    }
+}
+
 @media(max-width:376px){
     .ourevent {
-        padding-top: 18vh;
+        padding-top: 15vh;
         background-color: #ECECEC;
     }
 
