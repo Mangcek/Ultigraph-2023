@@ -101,7 +101,7 @@ export default function OurEvent({ auth, laravelVersion, phpVersion }){
                             <h3>23 September - 28 Oktober 2023</h3>
                         </div>
                         <div className="descBox">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla.</p>
+                            <p>This year Ultigraph held seven types of competitions with the theme of “Raya Budaya” which aims to introduce or celebrate Indonesian culture to today's society. There are various types of competitions ranging from photography, digital illustration, logo design, packaging design, motion graphics, character design, and UI/UX design.</p>
                         </div>
                     </div>
                     <div className="boxEvents" id="event4">
@@ -126,7 +126,7 @@ export default function OurEvent({ auth, laravelVersion, phpVersion }){
                             <h3>11 November 2023</h3>
                         </div>
                         <div className="descBox">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla</p>
+                            <p>Seluruh rangkaian acara Ultigraph 2023 akan ditutup dengan acara puncak, yaitu Awarding Night yang mengumumkan seluruh pemenang kompetisi. Pengadaan Awarding Night akan mengambil tema Ray the light untuk menyisipkan pesan dari tema besar Ultigraph 2023.</p>
                         </div>
                     </div>
                 </div>
