@@ -42,6 +42,14 @@ Route::get('/event', function () {
         'phpVersion' => PHP_VERSION,
     ]);
 });
+Route::get('/pre-event', function () {
+    return Inertia::render('PreEvent/PreEvent', [
+        'canLogin' => Route::has('login'),
+        'canRegister' => Route::has('register'),
+        'laravelVersion' => Application::VERSION,
+        'phpVersion' => PHP_VERSION,
+    ]);
+});
 
 // Route::get('/', function () {
 //     return Inertia::render('Welcome', [
