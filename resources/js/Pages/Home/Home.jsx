@@ -40,7 +40,6 @@ export default function Home({ auth, laravelVersion, phpVersion }){
 
     return (
         <>
-
             <Navbar color="#F37786"/>
             <Head title="Home" />
             <div className="container">
@@ -73,12 +72,12 @@ export default function Home({ auth, laravelVersion, phpVersion }){
                                 {/* <img style={{ width: '32px' }} src={Arrow} alt="" /> */}
                             </div>
                         </button>
-                        <button className="grid-event__section b" onClick={() => setModal(!modal)}>
+                        <a href="/pre-event" className="grid-event__section b">
                             <div className="the-text">
                                 <h2>PRE-EVENT</h2>
                                 {/* <img style={{ width: '32px' }} src={Arrow} alt="" /> */}
                             </div>
-                        </button>
+                        </a>
                         <button className="grid-event__section c" onClick={() => setModal(!modal)}>
                             <div className="the-text">
                                 <h2>SEMINAR & WORKSHOP</h2>

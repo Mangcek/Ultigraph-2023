@@ -51,6 +51,15 @@ Route::get('/pre-event', function () {
     ]);
 });
 
+Route::get('/daftar-preevent', function () {
+    return Inertia::render('DaftarPreEvent/DaftarPreEvent', [
+        'canLogin' => Route::has('login'),
+        'canRegister' => Route::has('register'),
+        'laravelVersion' => Application::VERSION,
+        'phpVersion' => PHP_VERSION,
+    ]);
+});
+
 // Route::get('/', function () {
 //     return Inertia::render('Welcome', [
 //         'canLogin' => Route::has('login'),

@@ -27,7 +27,7 @@ export default function PreEvent({ auth, laravelVersion, phpVersion }){
             window.location.href="/";
         });
         swiper__button__next.addEventListener('click', (e) => {
-            window.location.href="/";
+            window.location.href="/daftar-preevent";
         });
     },[])
     // Function to handle slide navigation
@@ -42,7 +42,7 @@ export default function PreEvent({ auth, laravelVersion, phpVersion }){
     // const swiper = useSwiper(swiperOptions);
 
     function DynamicNavbar(props) {
-        return <Navbar current="AboutUs" color={props.color} />;
+        return <Navbar color={props.color} />;
     }
 
     return(

@@ -1,0 +1,221 @@
+@font-face {
+    font-family: "Baloo Bhaijaan 2";
+    src: url("../fonts/BalooBhaijaan2-Regular.ttf");
+}
+
+.daftar-preevent {
+    display: flex;
+    flex-direction: column;
+    padding-top: 10%;
+
+    .judul {
+        display: flex;
+        margin: 0 auto;
+
+        .box-back {
+            display: flex;
+            border: 4px solid #F37786;
+            border-radius: 50px;
+            width: 4vw;
+            height: 4vw;
+
+            padding: 0;
+            margin: auto;
+            margin-right: 5vw;
+
+            .back {
+                margin: auto;
+            }   
+        }
+        .box-text {
+            display: flex;
+            background-color: #F37786;
+            border-radius: 50px;
+            padding: 6px 24px;
+
+            .text {
+                font-size: 3vw;
+                color: white;
+                font-family: "Baloo Bhaijaan 2";
+                margin: auto;
+            }
+        }
+    }
+    .konten {
+        background-color: rgba(197, 138, 189, 0.3);
+        border-radius: 36px;
+        margin: 3vw 300px;
+        padding: 40px 80px;
+        
+        .box-input {
+            display: flex;
+            width: 100%;
+
+            .label {
+                width: 30%;
+                color: #D15766;
+                font-family: "Baloo Bhaijaan 2";
+                font-size: 1.5vw;
+                margin: auto;
+            }
+            .input {
+                width: 70%;
+                border: none;
+                border-radius: 10px;
+                background-color: #efefef;
+            }
+            .box-email {
+                width: 70%;
+                margin-bottom: 1vw;
+
+                .label-email {
+                    color: #D15766;
+                    font-family: "Baloo Bhaijaan 2";
+                    font-size: 1.3vw;
+                    margin: 0;
+                }
+                .input-email {
+                    width: 100%;
+                    border: none;
+                    border-radius: 10px;
+                    background-color: #efefef;
+                }
+            }
+        }
+        .input-3 {
+            margin-bottom: 2vw;
+        }
+        .label-box {
+            color: #D15766;
+            font-family: "Baloo Bhaijaan 2";
+            font-size: 1.5vw;
+        }
+        .garis {
+            width: 100%;
+            height: 2px;
+            background-color: #F37437;
+            margin: 2vw 0; 
+        }
+    }
+    .submit {
+        background-color: #F37786;
+        color: white;
+        font-family: "Baloo Bhaijaan 2";
+        font-size: 1.8vw;
+        border-radius: 40px;
+        margin: auto;
+        margin-bottom: 2vw;
+        padding: 0.5vw 5vw;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .daftar-preevent {
+        padding-top: 15%;
+
+        .judul {
+            .box-back {
+                width: 5vw;
+                height: 5vw;
+                .back {
+                    width: 2vw;
+                }
+            }
+        }
+        .konten {
+            margin: 3vw 120px;
+        }
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .daftar-preevent {
+        .konten {
+            padding: 20px 40px;
+
+            .box-input {
+                .label {
+                    font-size: 2vw;
+                }
+                .input {
+                    height: 1.2vw;
+                }
+                .box-email {
+                    .input-email {
+                        height: 1.2vw;
+                    }
+                    .label-email {
+                        font-size: 1.8vw;
+                    }
+                }
+            }
+            .label-box {
+                font-size: 2vw;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .daftar-preevent {
+        padding-top: 20%;
+        .konten {
+            margin: 3vw 80px;
+            padding: 20px 40px;
+
+            .box-input {
+                .input {
+                    height: 1.2vw;
+                }
+                .box-email {
+                    .input-email {
+                        height: 1.2vw;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .daftar-preevent {
+        padding-top: 25%;
+
+        .judul {
+            .box-back {
+                width: 6vw;
+                height: 6vw;
+                .back {
+                    width: 3vw;
+                }
+            }
+        }
+        .konten {
+            margin: 3vw 20px;
+            padding: 20px 40px;
+
+            .box-input {
+                .label {
+                    font-size: 2.5vw;
+                }
+                .input {
+                    height: 1.2vw;
+                }
+                .box-email {
+                    .input-email {
+                        height: 1.2vw;
+                    }
+                    .label-email {
+                        font-size: 2.3vw;
+                    }
+                }
+            }
+            .label-box {
+                font-size: 2.5vw;
+            }
+        }
+        .submit {
+            margin-bottom: 5vw;
+        }
+    }
+}
