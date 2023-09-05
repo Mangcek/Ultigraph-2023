@@ -10,7 +10,7 @@ import BungaKanan from "../../../assets/daftar-preevent/BungaKanan.svg";
 
 export default function DaftarPreEvent({ auth, laravelVersion, phpVersion }){
     function submitForm() {
-        const form = document.getElementById('formRegisA');
+        const form = document.getElementById('');
         const formData = new FormData(form);
     
         Axios.post('/formPreEvent', formData)
@@ -25,7 +25,7 @@ export default function DaftarPreEvent({ auth, laravelVersion, phpVersion }){
         <>
             <Navbar color="#F37786"/>
             <Head title="Daftar Pre-Event" />
-            <form className="daftar-preevent" id='formRegisA'>
+            <div className="daftar-preevent">
                 <img className="bunga-kiri" src={BungaKiri} alt="" />
                 <img className="bunga-kanan" src={BungaKanan} alt="" />
                 <div className="judul">
@@ -36,6 +36,7 @@ export default function DaftarPreEvent({ auth, laravelVersion, phpVersion }){
                         <p className="text">PENDAFTARAN PRE-EVENT</p>
                     </div>
                 </div>
+<form className="form">
                 <div className="konten">
                     <div className="box-input">
                         <p className="label">Nama Lengkap:</p>
@@ -76,8 +77,11 @@ export default function DaftarPreEvent({ auth, laravelVersion, phpVersion }){
                         <input className="input" type="text" />
                     </div>
                 </div>
-                <button className="submit" onClick={submitForm}>SUBMIT</button>
-            </form>
+                <button className="submit">SUBMIT</button>
+                <form action="/formPreEvent">
+
+                </form>
+            </div>
             <Footer />
         </>
     );

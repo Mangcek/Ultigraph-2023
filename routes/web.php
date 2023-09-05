@@ -27,38 +27,39 @@ Route::get('/', function () {
 });
 
 Route::get('/aboutus', function () {
-    return Inertia::render('About us/AboutUs',[
-        'canLogin' => Route::has('login'),
-        'canRegister' => Route::has('register'),
-        'laravelVersion' => Application::VERSION,
-        'phpVersion' => PHP_VERSION,
-    ]);
+    return Inertia::render('About us/AboutUs');
 });
 
 Route::get('/event', function () {
-    return Inertia::render('OurEvent/OurEvent',[
-        'canLogin' => Route::has('login'),
-        'canRegister' => Route::has('register'),
-        'laravelVersion' => Application::VERSION,
-        'phpVersion' => PHP_VERSION,
-    ]);
+    return Inertia::render('OurEvent/OurEvent');
 });
 Route::get('/pre-event', function () {
-    return Inertia::render('PreEvent/PreEvent', [
-        'canLogin' => Route::has('login'),
-        'canRegister' => Route::has('register'),
-        'laravelVersion' => Application::VERSION,
-        'phpVersion' => PHP_VERSION,
-    ]);
+    return Inertia::render('PreEvent/PreEvent');
 });
 
 Route::get('/daftar-preevent', function () {
-    return Inertia::render('DaftarPreEvent/DaftarPreEvent', [
-        'canLogin' => Route::has('login'),
-        'canRegister' => Route::has('register'),
-        'laravelVersion' => Application::VERSION,
-        'phpVersion' => PHP_VERSION,
-    ]);
+    return Inertia::render('DaftarPreEvent/DaftarPreEvent');
 });
 
-//Route::post('/formPreEvent', [FormController::class, 'preEventA']);
+Route::get('/formPreEvent', [FormController::class, 'preEventA']);
+
+// Route::get('/', function () {
+//     return Inertia::render('Welcome', [
+//         'canLogin' => Route::has('login'),
+//         'canRegister' => Route::has('register'),
+//         'laravelVersion' => Application::VERSION,
+//         'phpVersion' => PHP_VERSION,
+//     ]);
+// });
+
+// Route::get('/dashboard', function () {
+//     return Inertia::render('Dashboard');
+// })->middleware(['auth', 'verified'])->name('dashboard');
+
+// Route::middleware('auth')->group(function () {
+//     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
+//     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
+//     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
+// });
+
+require __DIR__.'/auth.php';
