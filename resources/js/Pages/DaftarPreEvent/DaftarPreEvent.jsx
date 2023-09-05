@@ -1,5 +1,5 @@
 import { Link, Head } from '@inertiajs/react';
-import { Axios } from 'axios';
+
 import Navbar from "../../Components/Navbar/Navbar";
 import Footer from "../../Components/Footer/Footer";
 import "../../../css/DaftarPreEvent.scss";
@@ -7,18 +7,6 @@ import "../../../css/DaftarPreEvent.scss";
 import BackButton from "../../../assets/daftar-preevent/ArrowLeft.png";
 
 export default function DaftarPreEvent({ auth, laravelVersion, phpVersion }){
-    function submitForm() {
-        const form = document.getElementById('');
-        const formData = new FormData(form);
-    
-        Axios.post('/formPreEvent', formData)
-          .then(function (response) {
-            //
-          })
-          .catch(function (error) {
-            //
-          });
-    }
     return (
         <>
             <Navbar color="#F37786"/>
@@ -73,9 +61,6 @@ export default function DaftarPreEvent({ auth, laravelVersion, phpVersion }){
                     </div>
                 </div>
                 <button className="submit">SUBMIT</button>
-                <form action="/formPreEvent">
-
-                </form>
             </div>
             <Footer />
         </>
