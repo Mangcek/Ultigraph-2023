@@ -5,8 +5,6 @@ import Footer from "../../Components/Footer/Footer";
 import "../../../css/DaftarPreEvent.scss";
 
 import BackButton from "../../../assets/daftar-preevent/ArrowLeft.png";
-import BungaKiri from "../../../assets/daftar-preevent/BungaKiri.svg";
-import BungaKanan from "../../../assets/daftar-preevent/BungaKanan.svg";
 
 export default function DaftarPreEvent({ auth, laravelVersion, phpVersion }){
     function submitForm() {
@@ -26,8 +24,6 @@ export default function DaftarPreEvent({ auth, laravelVersion, phpVersion }){
             <Navbar color="#F37786"/>
             <Head title="Daftar Pre-Event" />
             <div className="daftar-preevent">
-                <img className="bunga-kiri" src={BungaKiri} alt="" />
-                <img className="bunga-kanan" src={BungaKanan} alt="" />
                 <div className="judul">
                     <a href="/pre-event" className="box-back">
                         <img className="back" src={BackButton} alt="" />
@@ -36,7 +32,6 @@ export default function DaftarPreEvent({ auth, laravelVersion, phpVersion }){
                         <p className="text">PENDAFTARAN PRE-EVENT</p>
                     </div>
                 </div>
-<form className="form">
                 <div className="konten">
                     <div className="box-input">
                         <p className="label">Nama Lengkap:</p>
