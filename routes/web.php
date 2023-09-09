@@ -25,6 +25,20 @@ Route::get('/', function () {
     ]);
 });
 
+Route::get('/aboutus', function () {
+    return Inertia::render('About us/AboutUs');
+});
+
+Route::get('/event', function () {
+    return Inertia::render('OurEvent/OurEvent');
+});
+Route::get('/pre-event2', function () {
+    return Inertia::render('PreEvent/PreEvent2');
+});
+Route::get('/pre-event', function () {
+    return Inertia::render('PreEvent/PreEvent');
+});
+
 Route::get('/dashboard', function () {
     return Inertia::render('Dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');

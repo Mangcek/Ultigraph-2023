@@ -13,7 +13,7 @@ export const preEvent = [
         title:"PRE-EVENT ULTIGRAPH",
         img: LP_pink,
         color:"#F37786",
-        pagination: [paginationPinkActive,paginationOrange,paginationPurple],
+        pagination: [paginationPinkActive,paginationOrange],
         arrow: [0, 1],
         description :'Pre-EVent Ultigraph 2023 akan dimulai dari bulan September hingga Oktober 2023. Kegiatan Pre-Event terdiri dari Hackathon dengan tema "Mainan Bapak Doeloe". Talkshow "Revitalisasi Media Melukis",dan yang terakhir adalah Mini Competition dengan Lomba design sticker, Lomba Tiktok, dan Lomba Portofolio'
     },
